@@ -1,0 +1,115 @@
+/* Custom Fonts */
+@font-face {
+    font-family: 'HeadingFont';
+    src: url('fonts/sebatas-teman-font/SebatasTeman-3zn6G.otf') format('opentype');
+    /* Add additional formats if needed */
+}
+
+@font-face {
+    font-family: 'SiteFont';
+    src: url('fonts/Manun-YzzRL.otf') format('opentype');
+    /* Add additional formats if needed */
+}
+/* Apply Custom Fonts */
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'HeadingFont', sans-serif;
+    color: #ba3d32;
+    /* Add additional styling as needed */
+}
+
+/* Paragraph Styles */
+p {
+    font-family: 'SiteFont', sans-serif;
+    /* Add additional styling as needed */
+}
+
+/* Lead Styles */
+lead {
+    font-family: 'SiteFont', sans-serif;
+    /* Add additional styling as needed */
+}
+
+/* Apply Custom Fonts to Labels */
+.form-label {
+    font-family: 'SiteFont', sans-serif;
+    color: #ba3d32; /* Set the desired text color */
+}
+
+/* Email */
+h2.email-title {
+    font-family: 'SiteFont', sans-serif;
+    color: #ba3d32; /* Set the desired text color */
+}
+
+/* Email and Message Inputs */
+input[type="email"],
+textarea {
+    font-family: 'SiteFont', sans-serif;
+    /* Add any additional styling as needed */
+}
+
+/* Custom Styles for Navbar */
+.navbar {
+    background-color: #ba3d32 !important; /* Use !important to override other styles if needed */
+}
+
+.navbar-brand img {
+    /* Customize the logo styles if needed */
+    content: url('images/LogoWhite.png');
+    width: 20%; /* Allow the logo to adjust its width */
+    height: 20%; /* Set a fixed height or adjust as needed */
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #ffa663 !important; /* Set the default color */
+    font-family: 'SiteFont', sans-serif;
+    transition: color 0.3s ease; /* Add smooth transition for color change */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important; /* Set the desired color on hover */
+    background-color: transparent;
+}
+
+/* Custom Colors */
+:root {
+    --primary-color: #ba3d32; /* Set your primary color */
+    --secondary-color: #ee802a; /* Set your secondary color */
+    --accent-color: #85a43c; /* Set an accent color */
+}
+
+/* Apply Custom Colors */
+/* Example: Change the background color of the navigation bar */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+/* Example: Change the color of buttons */
+.btn {
+    background-color: var(--accent-color);
+    color: #fff; /* Set text color for buttons */
+}
+
+/* Increase margin-bottom for the input fields and message box */
+.form-control,
+textarea {
+    margin-bottom: 10px; /* Adjust the value as needed */
+}
+
+/*Custom Buttons */
+.btn-custom {
+    font-family: 'SiteFont', sans-serif; /* Set your custom font */
+    background-color:#85a43c; /* Set the button background color using a custom color variable */
+    color: #fff; /* Set the text color for the button */
+    padding: 10px 20px; /* Add padding to the button (adjust values as needed) */
+    /* Add any additional styling as needed */
+}
+
+.btn-custom:hover {
+    background-color: #b2da55; /* Set the button background color on hover */
+    /* Add any additional styling for hover state */
+}
