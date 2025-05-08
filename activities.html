@@ -2,220 +2,176 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Apple-A-Looza | Activities</title>
-    <!-- Link to Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Link to Custom Styles -->
-    <link rel="stylesheet" href="styles.css">
+  <!-- Meta Information for SEO and social media sharing -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apple-A-Looza | Activities</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Explore Apple-A-Looza's farmer's markets and science museums, and meet our horse, Alexandria!">
-    <meta name="keywords" content="Apple-A-Looza, activities, Farmer's Market, Appaloosa Horse, Alexandria, Vegetable Growing Competition, Science Museum, event, celebration">
-    <meta name="author" content="Justin Lopez">
-    <meta name="robots" content="index, follow">
-    <meta name="og:title" content="Apple-A-Looza | Activities">
-    <meta name="og:description" content="Explore Apple-A-Looza's farmer's markets and science museums, and meet our horse, Alexandria!">
-    <meta name="og:image" content="pexels-pavel-bak-7461598.jpg">
-    <meta name="og:url" content="URL of the current page">
-    <meta name="og:site_name" content="Apple-A-Looza">
-
-    <style>
-        
-        /* Custom styles for image sizes in carousel */
-        .custom-img-width {
-            width: 20%;
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Custom styles for carousel control buttons */
-        .carousel-control-prev,
-        .carousel-control-next {
-            color: #ba3d32;
-            font-size: 2rem;
-            background: #ba3d32;
-            border: none;
-            border-radius: 5px;
-        }
-
-        /* Custom styles for custom images on control buttons */
-        .custom-carousel-control-prev-icon,
-        .custom-carousel-control-next-icon {
-            width: auto; /* Adjust the width as needed */
-            height: auto; /* Adjust the height as needed */
-            background-size: cover;
-        }
-
-        .custom-carousel-control-prev-icon {
-            background-image: url('images/PrevArrow.png'); /* Replace with the path to your custom previous button image */
-        }
-
-        .custom-carousel-control-next-icon {
-            background-image: url('images/NextArrow.png'); /* Replace with the path to your custom next button image */
-        }
-    </style>
+  <!-- Description, Keywords, and other meta tags for SEO -->
+  <meta name="description" content="Explore Apple-A-Looza's farmer's markets and science museums, and meet our horse, Alexandria." />
+  <meta name="keywords" content="Apple-A-Looza, activities, Farmer's Market, Appaloosa Horse, Alexandria, Vegetable Growing Competition, Science Museum, event, celebration" />
+  <meta name="author" content="Justin Lopez" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Apple-A-Looza | Activities" />
+  <meta property="og:description" content="Explore Apple-A-Looza's farmer's markets and science museums, and meet our horse, Alexandria." />
+  <meta property="og:image" content="pexels-pavel-bak-7461598.jpg" />
+  <meta property="og:url" content="URL of the current page" />
+  <meta property="og:site_name" content="Apple-A-Looza" />
 </head>
 
-
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images\LogoWhite.png" alt="Apple-A-Looza Logo" height="30">
-            </a>
-            <div class="navbar-collapse justify-content-end">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="activities.html">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Event Activities Content -->
-    <div class="container mt-4 mb-4">
-
-        <!-- Farmer's Market -->
-        <section class="activity-section">
-            <h2>Farmer's Market</h2>
-            <p>
-                Explore a variety of fresh and locally grown fruits and vegetables at our Farmer's Market.
-                Meet local farmers and learn about sustainable farming practices.
-            </p>
-            <!-- Image Carousel for Farmer's Market -->
-            <div id="farmerMarketCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/pexels-anna-pou-9345619.jpg" class="d-block custom-img-width mx-auto" alt="A man, a woman, and a child picking up onions at the farmer's market.">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/pexels-maria-orlova-4946998.jpg" class="d-block custom-img-width mx-auto" alt="Bell peppers, zucchini, and flowers being sold at the farmer's market.">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/pexels-kamaji-ogino-5094503.jpg" class="d-block custom-img-width mx-auto" alt="A woman picking up, and being kissed by her child, in front of the vegetables being sold.">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#farmerMarketCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#farmerMarketCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-
-        <!-- Meet and Greet with an Appaloosa Horse -->
-        <section class="activity-section mt-4">
-            <h2>Meet Alexandria, the Appaloosa Horse!</h2>
-            <p>
-                Come and meet Alexandria, our friendly Appaloosa horse. Learn about horse care, grooming, and enjoy a
-                unique opportunity for a hands-on experience.
-            </p>
-            <!-- Image Carousel for Appaloosa Horse -->
-            <div id="appaloosaCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/pexels-pavel-bak-7461598.jpg" class="d-block custom-img-width mx-auto" alt="Alexandria the horse, standing in front of a fence, on a farm, on a slightly snowy afternoon.">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/pexels-pavel-bak-7461597.jpg" class="d-block custom-img-width mx-auto" alt="Alexandria the horse, standing slightly off-screen to the right, with her face still visible.">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#appaloosaCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#appaloosaCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-
-        <!-- Vegetable Growing Competition -->
-        <section class="activity-section mt-4">
-            <h2>Vegetable Growing Competition</h2>
-            <p>
-                Join our Vegetable Growing Competition and showcase your gardening skills.
-                Learn tips and tricks for growing your own vegetables and win exciting prizes!
-            </p>
-            <!-- Image Carousel for Vegetable Growing Competition -->
-            <div id="vegetableCompetitionCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/pexels-anna-shvets-5231244.jpg" class="d-block custom-img-width mx-auto" alt="A woman wearing a sun hat, and holding her prized yellow pumpkin.">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/pexels-ekaterina-bolovtsova-5036705.jpg" class="d-block custom-img-width mx-auto" alt="A woman wearing a bucket hat, holding her homegrown strawberries.">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/pexels-sam-lion-5709271.jpg" class="d-block custom-img-width mx-auto" alt="A woman proudly showing off her basket of parsley leaves.">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#vegetableCompetitionCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#vegetableCompetitionCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-
-        <!-- Science Museum -->
-        <section class="activity-section mt-4">
-            <h2>Science Museum</h2>
-            <p>
-                Explore the science behind fruits and vegetables in our Small Science Gallery.
-                Interactive exhibits and displays will engage visitors of all ages.
-            </p>
-            <!-- Image Carousel for Small Science Gallery -->
-            <div id="scienceGalleryCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/pexels-gustavo-fring-5622196.jpg" class="d-block custom-img-width mx-auto" alt="A woman, standing in front of a chalkboard, holding a clipboard, and showing you a small bowl of vegetables.">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/pexels-pixabay-356040.jpg" class="d-block custom-img-width mx-auto" alt="Bell peppers, turnips, and other vegetables sitting in front of a window sil on a sunny day.">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/pexels-jill-wellington-35625.jpg" class="d-block custom-img-width mx-auto" alt="A scientist, specializing in food, looking through a microscope, with a book about fruits and vegetables next to him on his desk.">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#scienceGalleryCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#scienceGalleryCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="images/LogoWhite.png" alt="Apple-A-Looza Logo" height="30" />
+      </a>
+      <!-- Navbar toggle for mobile devices -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar items -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://justinlopez2002.github.io/JustinLopez2002/">Return to Portfolio</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+  <!-- Main content of the activities page -->
+  <div class="container mt-4 mb-4">
 
+    <!-- Farmer's Market section -->
+    <section class="activity-section">
+      <h2>Farmer's Market</h2>
+      <p>Explore a variety of fresh and locally grown fruits and vegetables at our Farmer's Market. Meet local farmers and learn about sustainable farming practices.</p>
+
+      <!-- Carousel for Farmer's Market images -->
+      <div id="farmerMarketCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Carousel items (images) -->
+          <div class="carousel-item active">
+            <img src="images/pexels-anna-pou-9345619.jpg" class="d-block w-100" alt="A man, a woman, and a child picking up onions at the farmer's market.">
+          </div>
+          <div class="carousel-item">
+            <img src="images/pexels-maria-orlova-4946998.jpg" class="d-block w-100" alt="Bell peppers, zucchini, and flowers being sold at the farmer's market.">
+          </div>
+          <div class="carousel-item">
+            <img src="images/pexels-kamaji-ogino-5094503.jpg" class="d-block w-100" alt="A woman picking up, and being kissed by her child, in front of the vegetables being sold.">
+          </div>
+        </div>
+        <!-- Carousel controls (previous and next buttons) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#farmerMarketCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#farmerMarketCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Meet Alexandria, the Appaloosa Horse section -->
+    <section class="activity-section mt-4">
+      <h2>Meet Alexandria, the Appaloosa Horse</h2>
+      <p>Come and meet Alexandria, our friendly Appaloosa horse. Learn about horse care, grooming, and enjoy a hands-on experience.</p>
+
+      <!-- Carousel for Appaloosa Horse images -->
+      <div id="appaloosaCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/pexels-pavel-bak-7461598.jpg" class="d-block w-100" alt="Alexandria the horse, standing in front of a fence, on a farm, on a slightly snowy afternoon.">
+          </div>
+          <div class="carousel-item">
+            <img src="images/pexels-pavel-bak-7461597.jpg" class="d-block w-100" alt="Alexandria the horse, standing slightly off-screen to the right, with her face still visible.">
+          </div>
+        </div>
+        <!-- Carousel controls (previous and next buttons) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#appaloosaCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#appaloosaCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Vegetable Growing Competition section -->
+    <section class="activity-section mt-4">
+      <h2>Vegetable Growing Competition</h2>
+      <p>Join our Vegetable Growing Competition and showcase your gardening skills. Learn tips and tricks for growing your own vegetables and win prizes.</p>
+
+      <!-- Carousel for Vegetable Competition images -->
+      <div id="vegetableCompetitionCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/pexels-anna-shvets-5231244.jpg" class="d-block w-100" alt="A woman wearing a sun hat, and holding her prized yellow pumpkin.">
+          </div>
+          <div class="carousel-item">
+            <img src="images/pexels-ekaterina-bolovtsova-5036705.jpg" class="d-block w-100" alt="A woman wearing a bucket hat, holding her homegrown strawberries.">
+          </div>
+          <div class="carousel-item">
+            <img src="images/pexels-sam-lion-5709271.jpg" class="d-block w-100" alt="A woman proudly showing off her basket of parsley leaves.">
+          </div>
+        </div>
+        <!-- Carousel controls (previous and next buttons) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#vegetableCompetitionCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#vegetableCompetitionCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Science Museum section -->
+    <section class="activity-section mt-4">
+      <h2>Science Museum</h2>
+      <p>Explore the science behind fruits and vegetables in our Small Science Gallery. Interactive exhibits and displays will engage visitors of all ages.</p>
+
+      <!-- Carousel for Science Museum images -->
+      <div id="scienceGalleryCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/pexels-gustavo-fring-5622196.jpg" class="d-block w-100" alt="A woman, standing in front of a chalkboard, holding a clipboard, and showing you a small bowl of vegetables.">
+          </div>
+          <div class="carousel-item">
+            <img src="images/pexels-pixabay-356040.jpg" class="d-block w-100" alt="Bell peppers, turnips, and other vegetables sitting in front of a window sill on a sunny day.">
+          </div>
+          <div class="carousel-item">
+            <img src="images/pexels-jill-wellington-35625.jpg" class="d-block w-100" alt="A scientist, specializing in food, looking through a microscope, with a book about fruits and vegetables next to him on his desk.">
+          </div>
+        </div>
+        <!-- Carousel controls (previous and next buttons) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#scienceGalleryCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#scienceGalleryCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js for responsive behavior and carousel functionality -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -1,115 +1,164 @@
-/* Custom Fonts */
+/*==============================
+  Font Definitions
+==============================*/
 @font-face {
     font-family: 'HeadingFont';
     src: url('fonts/sebatas-teman-font/SebatasTeman-3zn6G.otf') format('opentype');
-    /* Add additional formats if needed */
 }
 
 @font-face {
     font-family: 'SiteFont';
     src: url('fonts/Manun-YzzRL.otf') format('opentype');
-    /* Add additional formats if needed */
 }
-/* Apply Custom Fonts */
 
-/* Heading Styles */
+/*==============================
+  Root Colors
+==============================*/
+:root {
+    --primary-color: #ba3d32;
+    --secondary-color: #ee802a;
+    --accent-color: #85a43c;
+}
+
+/*==============================
+  Typography
+==============================*/
 h1, h2, h3, h4, h5, h6 {
     font-family: 'HeadingFont', sans-serif;
-    color: #ba3d32;
-    /* Add additional styling as needed */
+    color: var(--primary-color);
 }
 
-/* Paragraph Styles */
-p {
-    font-family: 'SiteFont', sans-serif;
-    /* Add additional styling as needed */
-}
-
-/* Lead Styles */
-lead {
-    font-family: 'SiteFont', sans-serif;
-    /* Add additional styling as needed */
-}
-
-/* Apply Custom Fonts to Labels */
-.form-label {
-    font-family: 'SiteFont', sans-serif;
-    color: #ba3d32; /* Set the desired text color */
-}
-
-/* Email */
-h2.email-title {
-    font-family: 'SiteFont', sans-serif;
-    color: #ba3d32; /* Set the desired text color */
-}
-
-/* Email and Message Inputs */
+p,
+.form-label,
 input[type="email"],
 textarea {
     font-family: 'SiteFont', sans-serif;
-    /* Add any additional styling as needed */
 }
 
-/* Custom Styles for Navbar */
+.form-label,
+h2.email-title {
+    color: var(--primary-color);
+}
+
+/*==============================
+  Navbar
+==============================*/
 .navbar {
-    background-color: #ba3d32 !important; /* Use !important to override other styles if needed */
+    background-color: var(--primary-color) !important;
 }
 
 .navbar-brand img {
-    /* Customize the logo styles if needed */
     content: url('images/LogoWhite.png');
-    width: 20%; /* Allow the logo to adjust its width */
-    height: 20%; /* Set a fixed height or adjust as needed */
-    max-width: 100%;
-    height: auto;
+    max-height: 50px;
 }
 
 .navbar-nav .nav-link {
-    color: #ffa663 !important; /* Set the default color */
+    color: #ffa663 !important;
     font-family: 'SiteFont', sans-serif;
-    transition: color 0.3s ease; /* Add smooth transition for color change */
+    transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ffffff !important; /* Set the desired color on hover */
-    background-color: transparent;
+    color: #ffffff !important;
 }
 
-/* Custom Colors */
-:root {
-    --primary-color: #ba3d32; /* Set your primary color */
-    --secondary-color: #ee802a; /* Set your secondary color */
-    --accent-color: #85a43c; /* Set an accent color */
-}
-
-/* Apply Custom Colors */
-/* Example: Change the background color of the navigation bar */
-.navbar {
-    background-color: var(--primary-color);
-}
-
-/* Example: Change the color of buttons */
-.btn {
-    background-color: var(--accent-color);
-    color: #fff; /* Set text color for buttons */
-}
-
-/* Increase margin-bottom for the input fields and message box */
-.form-control,
-textarea {
-    margin-bottom: 10px; /* Adjust the value as needed */
-}
-
-/*Custom Buttons */
+/*==============================
+  Buttons
+==============================*/
+.btn,
 .btn-custom {
-    font-family: 'SiteFont', sans-serif; /* Set your custom font */
-    background-color:#85a43c; /* Set the button background color using a custom color variable */
-    color: #fff; /* Set the text color for the button */
-    padding: 10px 20px; /* Add padding to the button (adjust values as needed) */
-    /* Add any additional styling as needed */
+    background-color: var(--accent-color);
+    color: #fff;
+    font-family: 'SiteFont', sans-serif;
+    padding: 10px 20px;
 }
 
 .btn-custom:hover {
-    background-color: #b2da55; /* Set the button background color on hover */
-    /* Add any additional styling for hover state */
+    background-color: #b2da55;
+}
+
+/*==============================
+  Form Controls
+==============================*/
+.form-control,
+textarea {
+    margin-bottom: 10px;
+}
+
+/*==============================
+  Carousel
+==============================*/
+.carousel-item {
+    height: 400px;
+    text-align: center;
+}
+
+.carousel-item > div,
+.carousel-item > img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.carousel-item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    opacity: 1;
+}
+
+.carousel-control-prev:focus:not(:hover),
+.carousel-control-next:focus:not(:hover) {
+    opacity: 0.5;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('images/PrevArrow.png');
+}
+
+.carousel-control-next-icon {
+    background-image: url('images/NextArrow.png');
+}
+
+/* Custom Carousel Wrapper */
+.custom-carousel {
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-carousel img {
+    height: 100%;
+    object-fit: contain;
 }
