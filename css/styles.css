@@ -3,12 +3,16 @@
 ==============================*/
 @font-face {
     font-family: 'HeadingFont';
-    src: url('fonts/sebatas-teman-font/SebatasTeman-3zn6G.otf') format('opentype');
+    src: url('../fonts/sebatas-teman-font/SebatasTeman-3zn6G.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'SiteFont';
-    src: url('fonts/Manun-YzzRL.otf') format('opentype');
+    src: url('../fonts/Manun-YzzRL.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*==============================
@@ -23,6 +27,13 @@
 /*==============================
   Typography
 ==============================*/
+body {
+    font-family: 'SiteFont', sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'HeadingFont', sans-serif;
     color: var(--primary-color);
@@ -35,11 +46,6 @@ textarea {
     font-family: 'SiteFont', sans-serif;
 }
 
-.form-label,
-h2.email-title {
-    color: var(--primary-color);
-}
-
 /*==============================
   Navbar
 ==============================*/
@@ -48,7 +54,6 @@ h2.email-title {
 }
 
 .navbar-brand img {
-    content: url('images/LogoWhite.png');
     max-height: 50px;
 }
 
@@ -71,6 +76,7 @@ h2.email-title {
     color: #fff;
     font-family: 'SiteFont', sans-serif;
     padding: 10px 20px;
+    border: none;
 }
 
 .btn-custom:hover {
@@ -83,6 +89,7 @@ h2.email-title {
 .form-control,
 textarea {
     margin-bottom: 10px;
+    font-family: 'SiteFont', sans-serif;
 }
 
 /*==============================
@@ -93,12 +100,6 @@ textarea {
     text-align: center;
 }
 
-.carousel-item > div,
-.carousel-item > img {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 .carousel-item img {
     max-height: 100%;
     max-width: 100%;
@@ -106,7 +107,6 @@ textarea {
     margin: 0 auto;
 }
 
-/* Carousel Controls */
 .carousel-control-prev,
 .carousel-control-next {
     background-color: transparent;
@@ -127,11 +127,6 @@ textarea {
     opacity: 1;
 }
 
-.carousel-control-prev:focus:not(:hover),
-.carousel-control-next:focus:not(:hover) {
-    opacity: 0.5;
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     width: 100%;
@@ -142,20 +137,22 @@ textarea {
 }
 
 .carousel-control-prev-icon {
-    background-image: url('images/PrevArrow.png');
+    background-image: url('../images/PrevArrow.png');
 }
 
 .carousel-control-next-icon {
-    background-image: url('images/NextArrow.png');
+    background-image: url('../images/NextArrow.png');
 }
 
-/* Custom Carousel Wrapper */
+/*==============================
+  Custom Carousel Wrapper
+==============================*/
 .custom-carousel {
     height: 300px;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .custom-carousel img {
