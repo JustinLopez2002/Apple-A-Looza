@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Apple-A-Looza | About</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="What is Apple-A-Looza? And what's its history?">
-    <meta name="keywords" content="Apple-A-Looza, Mississauga, Ontario, farmers, chefs, gardening, natural delicacies, Canada gardens, farmwork, heritage, activities, celebration">
-    <meta name="author" content="Justin Lopez">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Apple-A-Looza | About">
-    <meta property="og:description" content="What is Apple-A-Looza? And what's its history?">
-    <meta property="og:image" content="pexels-anna-pou-9345619.jpg">
-    <meta property="og:url" content="URL of the current page">
-    <meta property="og:site_name" content="Apple-A-Looza">
+    <meta name="description" content="What is Apple-A-Looza? And what's its history?" />
+    <meta name="keywords" content="Apple-A-Looza, Mississauga, Ontario, farmers, chefs, gardening, natural delicacies, Canada gardens, farmwork, heritage, activities, celebration" />
+    <meta name="author" content="Justin Lopez" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Apple-A-Looza | About" />
+    <meta property="og:description" content="What is Apple-A-Looza? And what's its history?" />
+    <meta property="og:image" content="images\pexels-anna-pou-9345619.jpg" />
+    <meta property="og:url" content="https://justinlopez2002.github.io/Apple-A-Looza/about.html" />
+    <meta property="og:site_name" content="Apple-A-Looza" />
 
     <style>
         body {
@@ -41,48 +41,17 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/LogoWhite.png" alt="Apple-A-Looza Logo" height="30">
-            </a>
-            <!-- Navbar toggle button for mobile view -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="activities.html">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://justinlopez2002.github.io/JustinLopez2002/sample-website.html">Return to Portfolio</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- Navbar Include -->
+    <div id="navbar-container"></div>
 
     <!-- About Page Content -->
     <div class="container mt-4">
         <h1 class="about-title">About Apple-A-Looza</h1>
 
-        <!-- First Section: Introduction to Apple-A-Looza -->
+        <!-- First Section: Introduction -->
         <div class="row about-section">
             <div class="col-md-6">
-                <img src="images/pexels-jo-kassis-4633292.jpg" alt="A group of people at a well-lit vegetable market in the evening." class="img-fluid">
+                <img src="images/pexels-jo-kassis-4633292.jpg" alt="A group of people at a well-lit vegetable market in the evening." class="img-fluid" />
             </div>
             <div class="col-md-6">
                 <div class="about-textbox">
@@ -94,10 +63,10 @@
             </div>
         </div>
 
-        <!-- Second Section: History of Apple-A-Looza -->
+        <!-- Second Section: History -->
         <div class="row mt-4 about-section">
             <div class="col-md-6 order-md-2">
-                <img src="images/pexels-pixabay-51947.jpg" alt="A crop at sunrise." class="img-fluid">
+                <img src="images/pexels-pixabay-51947.jpg" alt="A crop at sunrise." class="img-fluid" />
             </div>
             <div class="col-md-6">
                 <div class="about-textbox">
@@ -110,9 +79,22 @@
         </div>
     </div>
 
+    <!-- Footer Include -->
+    <div id="footer-container"></div>
+
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
 
+    <!-- Load Navbar and Footer -->
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar-container').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
 </body>
 </html>

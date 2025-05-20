@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Apple-A-Looza | Activities</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 
   <!-- Description, Keywords, and other meta tags for SEO -->
   <meta name="description" content="Explore Apple-A-Looza's farmer's markets and science museums, and meet our horse, Alexandria." />
@@ -16,36 +16,15 @@
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Apple-A-Looza | Activities" />
   <meta property="og:description" content="Explore Apple-A-Looza's farmer's markets and science museums, and meet our horse, Alexandria." />
-  <meta property="og:image" content="pexels-pavel-bak-7461598.jpg" />
-  <meta property="og:url" content="URL of the current page" />
+  <meta property="og:image" content="images\pexels-pavel-bak-7461597.jpg" />
+  <meta property="og:url" content="https://justinlopez2002.github.io/Apple-A-Looza/activities.html" />
   <meta property="og:site_name" content="Apple-A-Looza" />
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="images/LogoWhite.png" alt="Apple-A-Looza Logo" height="30" />
-      </a>
-      <!-- Navbar toggle for mobile devices -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Navbar items -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://justinlopez2002.github.io/JustinLopez2002/sample-website.html">Return to Portfolio</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+
+  <!-- Navbar Include -->
+  <div id="navbar-placeholder"></div>
 
   <!-- Main content of the activities page -->
   <div class="container mt-4 mb-4">
@@ -58,7 +37,6 @@
       <!-- Carousel for Farmer's Market images -->
       <div id="farmerMarketCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <!-- Carousel items (images) -->
           <div class="carousel-item active">
             <img src="images/pexels-anna-pou-9345619.jpg" class="d-block w-100" alt="A man, a woman, and a child picking up onions at the farmer's market.">
           </div>
@@ -69,7 +47,6 @@
             <img src="images/pexels-kamaji-ogino-5094503.jpg" class="d-block w-100" alt="A woman picking up, and being kissed by her child, in front of the vegetables being sold.">
           </div>
         </div>
-        <!-- Carousel controls (previous and next buttons) -->
         <button class="carousel-control-prev" type="button" data-bs-target="#farmerMarketCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -96,7 +73,6 @@
             <img src="images/pexels-pavel-bak-7461597.jpg" class="d-block w-100" alt="Alexandria the horse, standing slightly off-screen to the right, with her face still visible.">
           </div>
         </div>
-        <!-- Carousel controls (previous and next buttons) -->
         <button class="carousel-control-prev" type="button" data-bs-target="#appaloosaCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -126,7 +102,6 @@
             <img src="images/pexels-sam-lion-5709271.jpg" class="d-block w-100" alt="A woman proudly showing off her basket of parsley leaves.">
           </div>
         </div>
-        <!-- Carousel controls (previous and next buttons) -->
         <button class="carousel-control-prev" type="button" data-bs-target="#vegetableCompetitionCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -156,7 +131,6 @@
             <img src="images/pexels-jill-wellington-35625.jpg" class="d-block w-100" alt="A scientist, specializing in food, looking through a microscope, with a book about fruits and vegetables next to him on his desk.">
           </div>
         </div>
-        <!-- Carousel controls (previous and next buttons) -->
         <button class="carousel-control-prev" type="button" data-bs-target="#scienceGalleryCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -167,11 +141,30 @@
         </button>
       </div>
     </section>
+
   </div>
+
+  <!-- Footer Include -->
+  <div id="footer-placeholder"></div>
 
   <!-- Bootstrap JS and Popper.js for responsive behavior and carousel functionality -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+
+  <!-- Include navbar.html and footer.html via fetch and insert -->
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      });
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
 </body>
 
 </html>
